@@ -1,0 +1,23 @@
+{% load static%}
+    <!--nav-->
+    <header>
+        <nav class="navbar navbar-expand-lg text-color" style="background-color: #F69834;">
+            <div class="container-fluid">
+                <a class="navbar-brand color" href="#home">Futzada</a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active text-dark" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="#cursos">Loja</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="{% url 'cart_item'%}">Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>

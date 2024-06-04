@@ -1,0 +1,21 @@
+{% load static %}
+<div class="text-dark" style="background-color: #F69834;">
+    <div class="text-center interno internobottom cel">
+        <h1><a name="cursos"></a>Camisas</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-4 text-center padding cel">
+        {% for produto in card %}
+        <div class="col">
+            <div class="card">
+                <img src="{{produto.path.url}}" class="card-img-top h-75" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ produto.name }}</h5>
+                    <p class="card-text">R${{produto.price}}</p>
+                    <p class="card-text">descrição: {{produto.descript}}</p>
+                    <a href="{% url 'cart_item' %}" class="btn" style="background-color: #F69834;">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
